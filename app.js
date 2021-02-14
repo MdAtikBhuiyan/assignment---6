@@ -115,10 +115,10 @@ const createSlider = () => {
       slideIndex++;
       changeSlide(slideIndex);
     }, duration);
-
+    
+    backBtn.style.display = "block";
   }
 
-  backBtn.style.display = "block";
 }
 
 // change slider index 
