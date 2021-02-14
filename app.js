@@ -115,7 +115,7 @@ const createSlider = () => {
       slideIndex++;
       changeSlide(slideIndex);
     }, duration);
-    
+
     backBtn.style.display = "block";
   }
 
@@ -150,6 +150,7 @@ const changeSlide = (index) => {
 searchBtn.addEventListener('click', function () {
   displayImagesAll();
   backBtn.style.display = "none";
+  document.getElementById("img-count").innerText = 0;
 })
 
 sliderBtn.addEventListener('click', function () {
