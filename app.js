@@ -100,6 +100,7 @@ const createSlider = () => {
   if (duration < 0) {
     alert("Sorry!! duration can't be negative.");
     displayImagesAll();
+    document.getElementById("img-count").innerText = 0;
   }
   else {
     sliders.forEach(slide => {
